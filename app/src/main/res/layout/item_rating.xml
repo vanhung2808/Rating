@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="24dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    tools:ignore="UnusedAttribute"
+    android:focusable="true"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile1"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/iv_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/kim_joong"
+        android:layout_marginStart="12dp"
+        android:textColor="#9a9a9a"
+        android:textSize="14sp"
+        android:lineHeight="16sp"
+        android:fontFamily="@font/lexend_regular"/>
+
+    <com.example.ratingui.RatingBarVectorFix
+        android:id="@+id/rb_item"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        app:layout_constraintStart_toEndOf="@id/iv_profile"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:numStars="5"
+        style="@style/RatingBar2"
+        android:isIndicator="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:lineHeight="16sp"
+        android:textColor="#9a9a9a"
+        android:fontFamily="@font/lexend_regular"
+        android:text="@string/_06_04_2021_11_36"/>
+
+    <LinearLayout
+        android:id="@+id/lo_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_profile"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:visibility="invisible">
+        <ImageView
+            android:id="@+id/iv_cmt1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/cmt_1"
+            android:layout_marginEnd="1dp"
+            android:contentDescription="@string/todo1" />
+        <ImageView
+            android:id="@+id/iv_cmt2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/cmt_2"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:contentDescription="@string/todo2" />
+        <ImageView
+            android:id="@+id/iv_cmt3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/cmt_3"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:contentDescription="@string/todo3" />
+        <ImageView
+            android:id="@+id/iv_cmt4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/cmt_4"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:contentDescription="@string/todo4" />
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginStart="1dp">
+          <ImageView
+              android:id="@+id/iv_cmt5"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:src="@drawable/cmt_6"
+              android:contentDescription="@string/todo5"
+              tools:ignore="MissingConstraints" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:background="#66000000"
+              android:text="@string/_9"
+              app:layout_constraintTop_toTopOf="@id/iv_cmt5"
+              app:layout_constraintStart_toStartOf="@id/iv_cmt5"
+              app:layout_constraintEnd_toEndOf="@id/iv_cmt5"
+              app:layout_constraintBottom_toBottomOf="@id/iv_cmt5"
+              android:gravity="center"
+              android:textSize="20sp"
+              android:lineHeight="25sp"
+              android:textColor="@color/white"
+              android:fontFamily="@font/lexend_semibold"
+              android:layout_marginTop="1dp"
+              android:layout_marginBottom="1dp"/>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lo_image"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:lineHeight="16sp"
+        android:fontFamily="@font/lexend_regular"
+        android:text="@string/i_am_very_satisfied_with_this_product"/>
+
+    <TextView
+        android:id="@+id/tv_seemore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:lineHeight="16sp"
+        android:fontFamily="@font/lexend_regular"
+        android:text="@string/see_more"
+        android:visibility="invisible"
+        app:layout_goneMarginTop="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_shopname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_seemore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="14sp"
+        android:lineHeight="17.5sp"
+        android:textColor="#9a9a9a"
+        android:layout_marginTop="16dp"
+        android:text="@string/angela_soraphiare_shop"
+        android:background="@drawable/background_textview"
+        android:paddingTop="16dp"
+        android:paddingBottom="42dp"
+        android:paddingStart="16dp"
+        android:fontFamily="@font/lexend_regular"
+        android:visibility="invisible"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_shopname"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:lineHeight="17.5sp"
+        android:fontFamily="@font/lexend_regular"
+        android:text="@string/hi_thank_you_for_feedback"
+        android:paddingStart="16dp"
+        android:layout_marginTop="42dp"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

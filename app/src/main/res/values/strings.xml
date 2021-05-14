@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Rating UI</string>
+    <string name="rating">Rating</string>
+    <string name="start">start</string>
+    <string name="_4_2">4.2</string>
+    <string name="kim_joong">Kim Joong***</string>
+    <string name="todo">TODO</string>
+    <string name="_06_04_2021_11_36">06-04-2021 11:36</string>
+    <string name="i_am_very_satisfied_with_this_product">I am very satisfied with this product</string>
+    <string name="all">All</string>
+    <string name="_12">(12)</string>
+    <string name="comment">Comment</string>
+    <string name="_7">(7)</string>
+    <string name="media">Media</string>
+    <string name="_52">(5)</string>
+    <string name="_2">(2)</string>
+    <string name="_4">(4)</string>
+    <string name="_5">(5)</string>
+    <string name="_1">(1)</string>
+    <string name="_0">(0)</string>
+    <string name="angela_soraphiare_shop">Angela Soraphiare Shop</string>
+    <string name="hi_thank_you_for_feedback">Hi, thank you for feedback</string>
+    <string name="see_more">See More</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
+    <string name="todo6">TODO</string>
+    <string name="_9">+9</string>
+</resources>
